@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+@import "../../styles/screensize";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inner_container {
+    width: 95%;
+    display: flex;
+    padding: 0px 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    .search_section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      // background-color: aqua;
+      height: 70px;
+      border-bottom: solid 1px $greyColor;
+      .input_field {
+        width: 35%;
+      }
+    }
+    .title_section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      @include mobileSS {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+      div {
+        p {
+          font-weight: 600;
+          word-spacing: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .tabs_section {
+      margin-bottom: 20px;
+      @include mobileSS {
+        display: none;
+      }
+      hr {
+        margin-top: -2px;
+        border: solid 0.5px $greyColor;
+      }
+      .tab {
+        display: flex;
+        .tab_item {
+          padding-right: 20px;
+          p {
+            font-size: medium;
+            margin-right: 20px;
+            margin-bottom: 10px;
+          }
+        }
+        .active_tab_item {
+          padding-right: 20px;
+          margin-right: 20px;
+          border-bottom: 4px solid $primaryColor;
+        }
+      }
+      .active_tab {
+        display: flex;
+        p {
+          font-size: medium;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.user_card {
+  border-radius: 10px;
+  background-color: $cardColor;
+  padding: 20px;
+  margin-bottom: 20px;
+  & > :first-child {
+    margin-bottom: 20px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 20px;
+    }
+    p {
+      padding-right: 20px;
+    }
+  }
+  hr {
+    border: solid 0.01px $greyColor;
+    margin-bottom: 20px;
+  }
+}

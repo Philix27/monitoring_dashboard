@@ -1,0 +1,33 @@
+.button_wrapper {
+  position: relative;
+  margin-top: 20px;
+  width: 360px;
+  background-color: #70d6a3;
+  color: $cardColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  & > p {
+    width: fit-content;
+    padding: 14px 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0025em;
+    color: $cardColor;
+  }
+}
+
+.button_wrapper_valid {
+  background-color: #22a262;
+}

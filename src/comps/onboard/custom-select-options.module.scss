@@ -1,0 +1,33 @@
+.options_container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  .option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 8px;
+    font-size: 13px;
+
+    // width: 85px;
+    height: 32px;
+
+    /* Colors/Secondary/Secondary 100 */
+
+    background: #f6f5fa;
+    border-radius: 32px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+}

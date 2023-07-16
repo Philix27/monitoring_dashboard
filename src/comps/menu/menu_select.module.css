@@ -1,0 +1,43 @@
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply w-fit;
+  }
+
+  .box_button_default {
+    @apply relative flex items-center justify-center gap-2 w-full cursor-pointer text-[14px] rounded-[8px] bg-background-300 px-[4px] py-[4px] text-left sm:text-base;
+  }
+
+  .box_options {
+    @apply absolute z-50 w-full py-1 overflow-auto text-lg rounded-md bg-background-100 shadow-200 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+  }
+
+  .bg_transparent {
+    @apply gap-1 pb-0 bg-transparent;
+  }
+
+  .box_button_open {
+    @apply border-gray-200;
+  }
+
+  .border_none {
+    @apply border-transparent;
+  }
+
+  .box_button_close {
+    @apply border-transparent;
+  }
+
+  .icon {
+    @apply w-6 h-6 text-tertiary-1000;
+  }
+
+  .selected_text {
+    @apply block truncate text-[13px];
+  }
+
+  .icon_wrapper {
+    @apply inset-y-0 flex items-center pointer-events-none;
+  }
+}

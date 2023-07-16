@@ -1,0 +1,15 @@
+@import "../../styles//variables";
+@import "../../styles//screensize";
+
+.custom_tooltip {
+  background-color: $cardColor;
+  padding: 8px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .header {
+    font-size: 13px;
+    font-weight: 700;
+    color: #555;
+  }
+}

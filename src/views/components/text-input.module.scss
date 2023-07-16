@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+@import "../../styles/screensize";
+
+.container {
+  display: flex;
+  align-items: center;
+  // width: 700px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #1a1a1a;
+  background: $cardColor;
+  // flex: none;
+  // order: 1;
+  // flex-grow: 0;
+  border: solid 1px $greyColor;
+  & > input {
+    width: 100%;
+    background: transparent;
+    color: #1a1a1a;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+}

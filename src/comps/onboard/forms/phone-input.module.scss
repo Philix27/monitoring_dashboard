@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #1a1a1a;
+  background: #f1f1f1;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  & > input {
+    width: 100%;
+    background: transparent;
+    color: #1a1a1a;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+}
+
+.error_message {
+  width: 340px;
+  height: 16px;
+  padding-left: 4px;
+  padding-top: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: 0.004em;
+  color: #9e253f; // Error 700
+}
